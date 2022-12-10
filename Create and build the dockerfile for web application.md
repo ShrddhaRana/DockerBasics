@@ -1,7 +1,7 @@
 # Create a container using Dockerfile
 
 
-####1. Create the file static_web_application.py with below code
+1. Create the file static_web_application.py with below code
     ```
     from flask import Flask
     name = "My Name" # Please change the variable name
@@ -16,7 +16,7 @@
     if __name__ == "__main__":
         app.run(host='0.0.0.0', port=port)
 
-####2. Create the Dockerfile next to static_web_application.py
+2. Create the Dockerfile next to static_web_application.py
 ```
 FROM python:3.9-bullseye
 RUN  pip install flask
@@ -24,7 +24,7 @@ COPY /static_web_application.py /
 ENTRYPOINT ["python", "/static_web_application.py"]
 ```
 
-####3. Build the container image locally
+3. Build the container image locally
 ```
 $ docker build --tag static_web_application .
 
@@ -44,13 +44,13 @@ $ docker build --tag static_web_application .
         Successfully tagged static_web_application:latest
 ```
 
-####4. Run the container using the local image
+4. Run the container using the local image
 ```
 $ docker run -d -p 8000:8000  static_web_application
 Output: 1d69c46884f8aba091a0bf0fb6045be7ddf8c29f5d55de610379ffc44ad2c4f6
 ```
 
-####5. Test the container application in the ubuntu
+5. Test the container application in the ubuntu
 ```
 $ curl 172.22.15.200:8000 "VM's IP"
 RDSS
@@ -70,7 +70,7 @@ To push an image to Docker Hub, you must first name your local image using your 
 
 You can add multiple images to a repository by adding a specific :<tag> to them (for example docs/base:testing). If it’s not specified, the tag defaults to latest.
 
-####FYI: We can use these method for naming our images: (Skip and execute the next step)
+FYI: We can use these method for naming our images: (Skip and execute the next step)
 
 1. When you build them, using ```docker build -t <hub-user>/<repo-name>:<tag>```
 2. (We will go with this) By re-tagging an existing local image ```docker tag <existing-image> <hub-user>/<repo-name>:<tag>```
@@ -82,13 +82,13 @@ $ docker tag 850f8694d221 shraddhaaaa/srana
 $ docker commit 72546b8078be shraddhaaaa/srana:test
 sha256:349c2b364332def780157e77f309f80b308378fa72f415d019bb6aedcdf09216
 ```
-#### Create a tag accordingly w.r.t your username
+Create a tag accordingly w.r.t your username
 ```
 $ docker tag static_web_application xyz/static_web_application
 ```
 xyz -> is the docker hub id here. Please change according to your docker id.
 
-#### Now you can push this repository to the registry designated by its name or tag.
+Now you can push this repository to the registry designated by its name or tag.
 
 ``` docker push <hub-user>/<repo-name>:<tag>```
 ```
@@ -114,32 +114,32 @@ The image is then uploaded and available for use
 Example: https://hub.docker.com/repository/docker/xyz/static_web_application
 
 
-#Test the Greeting web application form the DockerHub.
+**Test the Greeting web application form the DockerHub.**
 
 To download a particular image, or set of images (i.e., a repository), use docker pull. If no tag is provided, Docker Engine uses the :latest tag as a default.
 
-####. Stop the earlier docker containers.
+Stop the earlier docker containers.
 ```
 $ docker stop container_id.
 ```
-####. Clean up docker containers from cache
+ Clean up docker containers from cache
 ```
 $ docker container prune
 ```
 
-####. Run the container from the docker hub image
+Run the container from the docker hub image
 ```
 $ docker run -d -p 8000:8000  xyz/static_web_application
 Output: b4cf04a71ed92f3fc566b176def23bde7f41a959cb7ae21c7aaa92979dfbffec
 ```
 
-#Test the running container
-####1. Testing from the ubunt os
+**Test the running container**
+1. Testing from the ubunt os
 
         $ curl 172.22.15.200:8000
         RDSS
 
-####2. Test from the Windows PowerShell
+2. Test from the Windows PowerShell
 
         $ wget 172.22.15.200:8000
        
