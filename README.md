@@ -12,7 +12,7 @@ Learn basics of Docker and build distributed systems using containers.
 Now you should be able to understand containers, Dockerfile, build an image from a Dockerfile and understand layers, tag and push images to a registry.
 
 # Docker intermediate.
-1. [Pass parameters to the Application using environment variables]()
+1. [Pass parameters to the Application using environment variables](https://github.com/ShrddhaRana/DockerBasics/blob/main/Pass%20parameters%20to%20the%20Application%20using%20environment%20variables.md)
 2. [Introduction to Redis cache database]()
 3. [Create dynamic web application which connects with redis installed on ubuntu os]()
 4. [Create a dynamic web application which connects with the redis container]()
