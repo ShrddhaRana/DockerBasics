@@ -19,7 +19,7 @@ Now you should be able to understand containers, Dockerfile, build an image from
 5. Create a dynamic web application in a container which connects with the redis container
 6. Connect container web application with redis container using its name
 7. Package the web application and Redis database using docker compose
-8. 
+
 Now you should be able to understand, using environment variables in the docker, connecting multiple docker using  docker networking, and  docker compose.
 
 
