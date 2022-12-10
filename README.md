@@ -44,7 +44,6 @@ Advanced:
 - Book:  [Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912) - Best practices, a must-read for SaaS development
 - [Minikube](https://minikube.sigs.k8s.io/docs/), [k3s](https://k3s.io/) - Single-node kubernetes installable on a VM or local dev box
 - [Helm](https://helm.sh/) - Package manager for Kubernetes
-- [Rancher](http://rancher.natinst.com/) - NI's IT-managed on-prem kubernetes cluster.
 
 
 
