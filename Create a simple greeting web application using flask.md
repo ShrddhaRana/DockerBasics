@@ -28,7 +28,7 @@ $ sudo apt install python3-pip -y
     Downloading distlib-0.3.6-py2.py3-none-any.whl (468 kB)
         |████████████████████████████████| 468 kB 5.4 MB/s
     Installing collected packages: platformdirs, filelock, distlib, virtualenv
-    WARNING: The script virtualenv is installed in '/home/sgrandhi-local-docker/.local/bin' which is not on PATH.
+    WARNING: The script virtualenv is installed in '/home/xyx-local-docker/.local/bin' which is not on PATH.
     Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
     Successfully installed distlib-0.3.6 filelock-3.8.0 platformdirs-2.5.4 virtualenv-20.16.7
    ```
@@ -38,8 +38,8 @@ $ sudo apt install python3-pip -y
     $ python3 -m virtualenv python_venv
 
     created virtual environment CPython3.8.10.final.0-64 in 203ms
-    creator CPython3Posix(dest=/home/sgrandhi-local-docker/python_venv, clear=False, no_vcs_ignore=False, global=False)
-    seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/sgrandhi-local-docker/.local/share/virtualenv)
+    creator CPython3Posix(dest=/home/xyx-local-docker/python_venv, clear=False, no_vcs_ignore=False, global=False)
+    seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/xyz-local-docker/.local/share/virtualenv)
         added seed packages: pip==22.3.1, setuptools==65.5.1, wheel==0.38.4
     activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator    
     ```
