@@ -2,23 +2,23 @@
 Learn basics of Docker and build distributed systems using containers.
 
 # Basics
-1. Install the docker and run the hello world application
-2. Run the basic nginx web server example
-4. Create a simple greeting web application using flask
-5. Run the simple greeting web application inside the container
-6. Register to docker hub
-7. Containerize the web application : Create and build the dockerfile for web application
+1. [Install the docker and run the hello world application](https://github.com/ShrddhaRana/DockerBasics/blob/main/Install%20the%20docker%20and%20run%20the%20hello%20world%20application.md)
+2. [Run the basic nginx web server example](https://github.com/ShrddhaRana/DockerBasics/blob/main/Run%20the%20basic%20nginx%20web%20server.md)
+4. [Create a simple greeting web application using flask](https://github.com/ShrddhaRana/DockerBasics/blob/main/Create%20a%20simple%20greeting%20web%20application%20using%20flask.md)
+5. [Run the simple greeting web application inside the container](https://github.com/ShrddhaRana/DockerBasics/blob/main/Run%20the%20simple%20greeting%20web%20application%20inside%20the%20container.md)
+6. [Register to docker hub](https://github.com/ShrddhaRana/DockerBasics/blob/main/Register%20to%20DockerHub.md)
+7. [Containerize the web application : Create and build the dockerfile for web application](https://github.com/ShrddhaRana/DockerBasics/blob/main/Create%20and%20build%20the%20dockerfile%20for%20web%20application.md)
 
 Now you should be able to understand containers, Dockerfile, build an image from a Dockerfile and understand layers, tag and push images to a registry.
 
 # Docker intermediate.
-1. Pass parameters to the Application using environment variables
-2. Introduction to Redis cache database
-3. Create dynamic web application which connects with redis installed on ubuntu os
-4. Create a dynamic web application which connects with the redis container
-5. Create a dynamic web application in a container which connects with the redis container
-6. Connect container web application with redis container using its name
-7. Package the web application and Redis database using docker compose
+1. [Pass parameters to the Application using environment variables]()
+2. [Introduction to Redis cache database]()
+3. [Create dynamic web application which connects with redis installed on ubuntu os]()
+4. [Create a dynamic web application which connects with the redis container]()
+5. [Create a dynamic web application in a container which connects with the redis container]()
+6. [Connect container web application with redis container using its name]()
+7. [Package the web application and Redis database using docker compose]()
 
 Now you should be able to understand, using environment variables in the docker, connecting multiple docker using  docker networking, and  docker compose.
 
